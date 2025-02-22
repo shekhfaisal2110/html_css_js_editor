@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="codeEditorContainer">
+        <div class="codeEditor htmlEditor">
+            <div class="headEditor">
+                <div class="leftHead">
+                    <img src="./img/html.png" alt="" width="25px">
+                    <span>HTML</span>
+                </div>
+                <div class="rightHead">
+                    <i class="fa-regular fa-copy copy htmlCopy"  style="color: rgba(255,255,255,0.105);"></i>
+                </div>
+            </div>
+            <textarea  class="htmlInput" spellcheck="false"></textarea>
+        </div>
+
+        <div class="codeEditor cssEditor">
+            <div class="headEditor">
+                <div class="leftHead">
+                    <img src="img/css.png" alt="" width="30px">
+                    <span>CSS</span>
+                </div>
+                <div class="rightHead">
+                    <i class="fa-regular fa-copy copy cssCopy"  style="color: rgba(255,255,255,0.105);"></i>
+                </div>
+            </div>
+            <textarea  class="cssInput" spellcheck="false"></textarea>
+        </div>
+
+        <div class="codeEditor jsEditor">
+            <div class="headEditor">
+                <div class="leftHead">
+                    <img src="img/js.png" alt="" width="30px">
+                    <span>JS</span>
+                </div>
+                <div class="rightHead">
+                    <i class="fa-regular fa-copy copy jsCopy"  style="color: rgba(255,255,255,0.105);"></i>
+                </div>
+            </div>
+            <textarea  class="jsInput" spellcheck="false"></textarea>
+        </div>
+
+    </div>
+
+    <div class="outputContainer">
+        <div class="outputHead">
+            <span style="color: rgba(255,255,255,0.891);">
+                OUTPUT
+            </span>
+            <i class="fa-regular fa-floppy-disk" style="color: rgba(255,255,255,0.891);" id="save"></i>
+            <i class="fa-solid fa-arrow-up" style="color: rgba(255,255,255,0.891);" id="full"></i>
+        </div>
+        <iframe id="output">
+
+        </iframe>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
